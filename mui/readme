@@ -1,0 +1,47 @@
+MechanicalUI
+  
+Natural Electronic Input: (http://www.pages.drexel.edu/~pb762/000_0462.JPG)
+
+USE ONE TYPE FOR EACH PURPOSE TO OFFER FAMILIARITY
+
+fundamental:
+  Button [widget]
+    input - boolean, squarewidth
+    display - [ submit ]
+    
+  Switch [widget]
+    input - boolean, squarewidth
+    output - boolean
+    display - [_] [X]
+    
+  Light [widget]
+    output - boolean, squarewidth
+    display - {X}
+    
+  Slider [widget]
+    input - 0..1 float, squarewidth
+    display - [--|-------]
+
+  Bar [widget]
+    output - 0..1 float, squarewidth
+    display - {--|-------}
+
+  Text [widget]
+    output - text, squarewidth
+    display - {HELLO WORL}
+
+ideas:
+  Static Text / Images (labels etc)       HELLO WORLD
+  Dead Switch (Slide lock?)               [>>>>>-----]
+  Switches (multi state)                  [_][X][_][_]
+  Groupings                             |--TITLE---|
+                                        |>content  |
+                                        |----------|
+  Screen placement with memory (lsdj)   [A][B][*][D]
+  Wire connections (x->x)               >TEXT< [ ]---->[ ] >TEXT<
+                                        >TEXT< [ ]\    [ ] >TEXT<
+                                        >TEXT< [ ] \   [ ] >TEXT<
+                                        >TEXT< [ ]  \  [ ] >TEXT<
+                                        >TEXT< [ ]   \ [ ] >TEXT<
+                                        >TEXT< [ ]    >[ ] >TEXT<
+  Number Counter                        [00000102[+-]]
